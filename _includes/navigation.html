@@ -1,0 +1,9 @@
+<nav>
+  <ul>
+    {% for post in site.tags.back-end reversed %}
+       <li>
+          <a class="{% if post.url == page.url %}active{% endif %}" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </li>
+    {% endfor %}
+  </ul>
+</nav>

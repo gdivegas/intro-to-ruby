@@ -1,0 +1,31 @@
+title: "Intro to Ruby - GDI"
+description: "Modified from Turing School's open source curriculum for the Try Turing Weekend."
+
+baseurl: ''
+permalink: /:title
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+exclude: [
+  'Gemfile',
+  'Gemfile.lock',
+  'README.md',
+  'LICENSE',
+  'CNAME'
+]
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "page"
+
+assets:
+  root_url: '/assets'
+
+images:
+  root_url: '/assets/images'
