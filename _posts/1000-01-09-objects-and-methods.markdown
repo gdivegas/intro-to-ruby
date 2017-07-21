@@ -1,7 +1,7 @@
 ---
 title: Objects and Methods
 layout: post
-date: 1000-01-06
+date: 1000-01-09
 permalink: objects-and-methods
 program: back-end
 tags: back-end
@@ -49,9 +49,11 @@ school = Building.new
 <p>Use the example above to define an Animal class in irb and create three instances of an animal.</p>
 </div>
 
+This is kind of boring though. Our buildings and animals don't do anything, nor do they keep track of any attributes (color, species, height, purpose, etc.). Let's talk about attributes.
+
 <h4>Attributes</h4>
 
-Objects generally will have attributes that contain some type of data specific to that instance. These attributes are stored as instance variables (`@attribute`) upon initialization of a new object. Let's look at the example below:
+Objects generally will have attributes that contain some type of data specific to that instance. These attributes are stored as instance variables which start with the @ sign (`@attribute`) upon initialization of a new object. Let's look at the example below:
 
 ```ruby
 class Task
@@ -73,13 +75,9 @@ p task_one
 <div class="try-it">
 <h2>Try It: Defining classes with attributes</h2>
 
-<p>In a new file, create </p>
+<p>Modify your Animal class to take in attributes. Examples of attributes might include color, species, name, etc.</p>
 
-<pre>4 multiplied by 5 is 20
-7 multiplied by 5 is 35
-8 multiplied by 5 is 40
-12 multiplied by 5 is 60</pre>
-Try getting started before looking at the code snippet below. If you're stuck, check out the starter code below:
+<p>Create and print out a few instances of your animals.</p>
 </div>
 
 We can use these instance variables in any other method that we define in the class.
@@ -110,7 +108,6 @@ Behavior of an object is encapsulated in its methods. For example, completing a 
 ```ruby
 class Task
   attr_reader   :title, :description
-  attr_accessor :status
 
   def initialize(title, description, status)
     @title       = title
@@ -128,23 +125,27 @@ class Task
 end
 ```
 
-<h4>Initializing an Object</h4>
+<h4>Interaction Pattern</h4>
 
-Now that we've defined the class, we can create new instances of the object and call its methods:
+Now that we've defined the class, and created an instance, we can call its methods. In order to load your code and interact with it in real-time, we'll load it into IRB:
 
-```ruby
-task = Task.new("Buy ticket", "Incomplete")
-task.complete? #=> false
-task.complete!
-task.complete? #=> true
 ```
-
-<h4>Classes Interacting</h4>
+$ irb
+2.3.0 :001 > load 'task.rb'
+ => true 
+2.3.0 :002 > task = Task.new("Buy airplane ticket", "Incomplete")
+ => #<Task:0x000000011e5748> 
+2.3.0 :003 > task.complete?
+ => false
+2.3.0 :004 > task.complete!
+2.3.0 :005 > task.complete?
+ => true
+```
 
 <div class="try-it">
 <h2>Try It: Creating the Person Class</h2>
 
-<p>Create a new file called <code>person.rb</code>. A person should have <b>attributes</b> of name, age, and language. Create a method celebrate_birthday! that increases the person's age by one year. The interaction patter should look like the one below. Try out your code and make sure it works!</p>
+<p>Create a new file called <code>person.rb</code>. A person should have <b>attributes</b> of name, age, and language. Create a method celebrate_birthday! that increases the person's age by one year. The interaction patter should look like the one below. Once you define your class and methods, open IRB, load your file, and test out your code and make sure it works!</p>
 <pre>kris = Person.new("Kris", 35, "English")
 kris.name
 "Kris"

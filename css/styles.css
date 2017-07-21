@@ -474,3 +474,9 @@ pre {
 .bold {
   text-decoration: underline;
   font-weight: bold; }
+
+.big {
+  font-size: 30px;
+  font-weight: bold;
+  color: blue;
+}

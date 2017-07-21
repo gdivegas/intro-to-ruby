@@ -38,7 +38,7 @@ client = Twitter::REST::Client.new do |config|
 end
 ```
 
-All of these keys and tokens are currently blank. We need to get tokens and keys we can use. Either use the keys and tokens provided to you at the Try Turing weekend, or follow the instructions <a href="#register">here</a> to generate your own keys and tokens. Paste the keys and tokens into your file. It should look like this (these are fake keys, so they won't work if you try to use them):
+All of these keys and tokens are currently blank. We need to get tokens and keys we can use. Either use the keys and tokens provided to you today, or follow the instructions <a href="#register">here</a> to generate your own keys and tokens. Paste the keys and tokens into your file. It should look like this (these are fake keys, so they won't work if you try to use them):
 
 ```ruby
 require 'twitter'
@@ -65,7 +65,7 @@ client = Twitter::REST::Client.new do |config|
   config.access_token_secret = "c42YsBf1EdDt7hv1xYnZ0knhckzbiLLatKHMBuLXTgyP3"
 end
 
-client.update("I'm learning how to code at Turing School!")
+client.update("I'm learning Ruby with Girl Develop It!")
 ```
 
 Check out the Twitter account to see if it worked!
@@ -82,7 +82,7 @@ But this is too easy. Let's add a little more to our program:
 
 <a name="register"></a>
 
-## OPTIONAL: Registering your own keys and tokens
+## OPTIONAL at home: Registering your own keys and tokens
 
 Log in to your Twitter account, then visit [https://apps.twitter.com/app/new](https://apps.twitter.com/app/new). Enter the following information:
 

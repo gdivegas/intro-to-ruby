@@ -42,7 +42,7 @@ client = Twitter::REST::Client.new do |config|
   config.access_token_secret = "c42YsBf1EdDt7hv1xYnZ0knhckzbiLLatKHMBuLXTgyP3"
 end
 
-client.user_timeline("turingschool").each do |tweet|
+client.user_timeline("girldevelopit").each do |tweet|
   puts tweet.text
 end
 ```
@@ -53,7 +53,7 @@ end
 <p>
   By default, our program only prints out the 20 most recent tweets. The <code>user_timeline</code> method can take another optional argument. If we wanted the 50 most recent tweets, we could do this:
 </p>
-<div class="highlighter-rouge"><pre class="language-ruby">client.user_timeline("turingschool", count: 50).each do |tweet|
+<div class="highlighter-rouge"><pre class="language-ruby">client.user_timeline("girldevelopit", count: 50).each do |tweet|
   puts tweet.text
 end</pre>
 </div>

@@ -1,7 +1,7 @@
 ---
 title: Strings
 layout: post
-date: 1000-01-01
+date: 1000-01-03
 permalink: strings
 program: back-end
 tags: back-end
@@ -57,7 +57,7 @@ location = "Las Vegas, NV"
 first_name = "Rachel"
 ```
 
-Notice that these variables start with a lower case letter and can include underscores (_).
+Notice that these variables start with a lower case letter and can include underscores (_). Variable names should express what value is stored inside so that they can be understood by someone who has no idea what your program does. Additionally, your variable names should be unique unless you are purposefully trying to overwrite an existing variable. 
 
 We can print these variables:
 
@@ -90,6 +90,28 @@ puts "#{first_name} lives at #{location}. Her email address is #{email}."
 Run your program a few times with different values for each variable to make sure it works.
 </div>
 
+## Reassigning Variables
+
+Variables can be reassigned with different values during the course of the program. For example, I could change any or all of the variables in my program and use them in a statement. Look at the code below. Predict what would be printed out when I run this program: 
+
+```ruby
+email = "rachel@girldevelopit.com"
+location = "Las Vegas, NV"
+first_name = "Rachel"
+
+puts "#{first_name} lives at #{location}. Her email address is #{email}."
+
+location = "Denver, CO"
+
+puts "#{first_name} lives at #{location}. Her email address is #{email}."
+```
+
+<div class="try-it">
+<h2>Try it: Reassigning Variables</h2>
+
+<p>Go back to your pet program. After you print out the initial line, change the values for the food and toy. Add one more puts line to print out the new values.</p>
+</div>
+
 ## String Methods
 
 You can think of a method as a command. With a dog, one command you might give is "bark". In code, we might represent this as:
@@ -112,6 +134,8 @@ puts message.include?("World")
 puts message.include?("Mars")
 puts message.reverse
 puts message.length
+puts message.swapcase
+puts message.empty? 
 ```
 
 <div class="try-it">

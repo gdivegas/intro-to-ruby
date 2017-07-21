@@ -1,7 +1,7 @@
 ---
 title: Arrays
 layout: post
-date: 1000-01-05
+date: 1000-01-08
 permalink: arrays
 program: back-end
 tags: back-end
@@ -34,6 +34,8 @@ Try these array methods out in IRB. What happens?
 > animals[1]
 > animals[2]
 > animals[3]
+> animals[0..2]
+> animals[-1]
 > animals.last
 ```
 
@@ -68,5 +70,54 @@ numbers = [10, 12, 17, 40, 55, 61]
 
 numbers.each do |num|
   # put your code here
+end
+```
+
+Phew! Let's try one more challenge. Before we do this, let's try out the modulo operator. Go into irb and type these out. Try to notice the pattern in order to figure out what the modulo (%) operator does:
+
+```ruby
+3%2
+4%2
+5%2
+6%2
+7%2
+
+8%4
+9%4
+10%4
+11%4
+12%4
+13%4
+```
+
+For our next project, we'll put together all of the skills we have learned so far in order to build our next project: FizzBuzz. 
+
+<div class="try-it">
+<h2>Challenge: FizzBuzz</h2>
+
+<p>Make a program that goes through numbers 1 through 100 and says "Fizz" if the number is divisible by 3, "Buzz" if the number is divisible by 5, and "FizzBuzz" if the number is divisible by both. If the number is not divisible by either 3 or 5, then just print the number.</p>
+
+<pre>1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+...etc</pre>
+Try getting started before looking at the code snippet below. If you're stuck, run the starter code below and see if you can modify it to make the FizzBuzz program:
+</div>
+
+```ruby
+(1..100).each do |num|
+  puts num
 end
 ```

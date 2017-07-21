@@ -24,7 +24,7 @@ Done with parts 1 - 3? Want more?
 <h2>Try it: Auto Reply</h2>
 
 <p>
-  Create a program that auto-replies to tweets containing a certain set of hashtags. For example, if I run the program with the hashtags #coding and #ruby, it could autoreply "I'm learning how to code at Turing School!" If you're stuck, check out <a href="http://stackoverflow.com/questions/28649582/how-to-reply-a-tweet-using-the-twitter-gem">this StackOverflow answer</a>.
+  Create a program that auto-replies to tweets containing a certain set of hashtags. For example, if I run the program with the hashtags #coding and #ruby, it could autoreply "I'm learning Ruby with Girl Develop It!" If you're stuck, check out <a href="http://stackoverflow.com/questions/28649582/how-to-reply-a-tweet-using-the-twitter-gem">this StackOverflow answer</a>.
 </p>
 </div>
 

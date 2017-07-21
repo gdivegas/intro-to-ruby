@@ -1,7 +1,7 @@
 ---
 title: Getting User Input
 layout: post
-date: 1000-01-02
+date: 1000-01-05
 permalink: getting-user-input
 program: back-end
 tags: back-end
