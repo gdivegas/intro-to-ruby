@@ -39,12 +39,30 @@ The double equals sign (==) will look at both sides and figure out whether they 
 Only the branch of the if/elsif that returns true will actually be run. 
 
 <div class="try-it">
-<h2>Try it: Choose Your Own Adventure</h2>
+<h2>Try It Option 1: Choose Your Own Adventure</h2>
 
 <p>A vicious dragon is chasing you!</p> 
 
 <p>Write a program that gives the user some options for what they could do. The user should choose an option based on a number. For example, if they want the first option, they would type 1. Then, based on what the user types in, print out a statement to tell the user what happened based on their choice.</p>
 </div>
+
+<div class="try-it">
+<h2>Try It Option 2: Even vs. Odd</h2>
+
+<p>Write a program that asks a user for a piece of text. It should say "even" if the number of characters in the text is even, and "odd" if the number of characters in the text is odd. As an extra challenge, put the number of letters for that word next to either Even! or Odd!.</p>
+
+<p>Hint: there is a method .even? that returns a true/false value for integers.</p>
+
+<pre>Enter a piece of text:
+Coding
+Even!</pre>
+
+<pre>Enter a piece of text:
+Coding
+Even! 6</pre>
+Try running your program a few times with different inputs.
+</div>
+
 
 
 ## Looping

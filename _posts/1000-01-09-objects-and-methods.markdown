@@ -1,11 +1,13 @@
 ---
 title: Objects and Methods
 layout: post
-date: 1000-01-09
+date: 1000-02-01
 permalink: objects-and-methods
 program: back-end
 tags: back-end
 ---
+
+Bonus! Want more Ruby? Check out this lesson on objects and methods on your own. 
 
 <h4>What is a Class?</h4>
 
